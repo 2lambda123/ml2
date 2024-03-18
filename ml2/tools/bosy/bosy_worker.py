@@ -1,4 +1,5 @@
 """BoSy Ray Worker"""
+
 import logging
 import time
 

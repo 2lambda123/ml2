@@ -200,9 +200,9 @@ _STRIXSOLUTION = _descriptor.Descriptor(
     serialized_end=247,
 )
 
-_STRIXPROBLEM.fields_by_name[
-    "specification"
-].message_type = ml2_dot_tools_dot_protos_dot_ltl__pb2._LTLSPECIFICATION
+_STRIXPROBLEM.fields_by_name["specification"].message_type = (
+    ml2_dot_tools_dot_protos_dot_ltl__pb2._LTLSPECIFICATION
+)
 DESCRIPTOR.message_types_by_name["StrixProblem"] = _STRIXPROBLEM
 DESCRIPTOR.message_types_by_name["StrixSolution"] = _STRIXSOLUTION
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -212,7 +212,7 @@ StrixProblem = _reflection.GeneratedProtocolMessageType(
     (_message.Message,),
     {
         "DESCRIPTOR": _STRIXPROBLEM,
-        "__module__": "ml2.tools.strix.strix_pb2"
+        "__module__": "ml2.tools.strix.strix_pb2",
         # @@protoc_insertion_point(class_scope:StrixProblem)
     },
 )
@@ -223,7 +223,7 @@ StrixSolution = _reflection.GeneratedProtocolMessageType(
     (_message.Message,),
     {
         "DESCRIPTOR": _STRIXSOLUTION,
-        "__module__": "ml2.tools.strix.strix_pb2"
+        "__module__": "ml2.tools.strix.strix_pb2",
         # @@protoc_insertion_point(class_scope:StrixSolution)
     },
 )

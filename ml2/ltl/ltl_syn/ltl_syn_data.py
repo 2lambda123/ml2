@@ -94,9 +94,11 @@ class LTLSynData(SupervisedData):
     def sample_generator(self):
         for _, row in self.data_frame.iterrows():
             sample = {
-                "assumptions": row["assumptions"].split(",")
-                if "assumptions" in row and row["assumptions"]
-                else [],  # key in dict check for data that does not contain assumptions
+                "assumptions": (
+                    row["assumptions"].split(",")
+                    if "assumptions" in row and row["assumptions"]
+                    else []
+                ),  # key in dict check for data that does not contain assumptions
                 "guarantees": row["guarantees"].split(",") if row["guarantees"] else [],
                 "inputs": row["inputs"].split(",") if row["inputs"] else [],
                 "outputs": row["outputs"].split(",") if row["outputs"] else [],
