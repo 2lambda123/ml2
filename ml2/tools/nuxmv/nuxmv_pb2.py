@@ -219,9 +219,9 @@ _SOLUTION = _descriptor.Descriptor(
     serialized_end=285,
 )
 
-_PROBLEM.fields_by_name[
-    "specification"
-].message_type = ml2_dot_tools_dot_protos_dot_ltl__pb2._LTLSPECIFICATION
+_PROBLEM.fields_by_name["specification"].message_type = (
+    ml2_dot_tools_dot_protos_dot_ltl__pb2._LTLSPECIFICATION
+)
 _SOLUTION.fields_by_name["status"].enum_type = _SOLUTION_STATUS
 _SOLUTION_STATUS.containing_type = _SOLUTION
 DESCRIPTOR.message_types_by_name["Problem"] = _PROBLEM
@@ -233,7 +233,7 @@ Problem = _reflection.GeneratedProtocolMessageType(
     (_message.Message,),
     {
         "DESCRIPTOR": _PROBLEM,
-        "__module__": "ml2.tools.nuxmv.nuxmv_pb2"
+        "__module__": "ml2.tools.nuxmv.nuxmv_pb2",
         # @@protoc_insertion_point(class_scope:Problem)
     },
 )
@@ -244,7 +244,7 @@ Solution = _reflection.GeneratedProtocolMessageType(
     (_message.Message,),
     {
         "DESCRIPTOR": _SOLUTION,
-        "__module__": "ml2.tools.nuxmv.nuxmv_pb2"
+        "__module__": "ml2.tools.nuxmv.nuxmv_pb2",
         # @@protoc_insertion_point(class_scope:Solution)
     },
 )
