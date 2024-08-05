@@ -500,9 +500,11 @@ class Experiment(Artifact):
 
             _ = tune.run(
                 tune_experiment,
-                callbacks=[WandbLoggerCallback(entity=WANDB_ENTITY, project=cls.WANDB_PROJECT)]
-                if stream_to_wandb
-                else [],
+                callbacks=(
+                    [WandbLoggerCallback(entity=WANDB_ENTITY, project=cls.WANDB_PROJECT)]
+                    if stream_to_wandb
+                    else []
+                ),
                 config={p: tune.grid_search(g) for p, g in args_dict.items()},
                 local_dir=cls.local_path(name),
                 name=name,

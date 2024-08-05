@@ -1,4 +1,5 @@
 """Wrapper for calling BoSy"""
+
 import logging
 import os
 import subprocess
