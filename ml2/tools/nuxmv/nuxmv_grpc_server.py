@@ -1,4 +1,5 @@
 """gRPC Server that model checks LTL specifications and AIGER circuits using nuXmv"""
+
 import argparse
 from concurrent import futures
 import logging

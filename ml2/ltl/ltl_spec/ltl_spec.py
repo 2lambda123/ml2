@@ -96,7 +96,7 @@ class LTLSpec:
             renamed_outputs = map(renaming.get, self.outputs)
 
         def rename_formula(formula, renaming):
-            for (ap, renamed_ap) in renaming.items():
+            for ap, renamed_ap in renaming.items():
                 # TODO doesn't work if ap is substring of other ap
                 formula = formula.replace(ap, renamed_ap)
             return formula

@@ -162,9 +162,9 @@ _BOSYSOLUTION = _descriptor.Descriptor(
     serialized_end=195,
 )
 
-_BOSYPROBLEM.fields_by_name[
-    "specification"
-].message_type = ml2_dot_tools_dot_protos_dot_ltl__pb2._LTLSPECIFICATION
+_BOSYPROBLEM.fields_by_name["specification"].message_type = (
+    ml2_dot_tools_dot_protos_dot_ltl__pb2._LTLSPECIFICATION
+)
 DESCRIPTOR.message_types_by_name["BoSyProblem"] = _BOSYPROBLEM
 DESCRIPTOR.message_types_by_name["BoSySolution"] = _BOSYSOLUTION
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -174,7 +174,7 @@ BoSyProblem = _reflection.GeneratedProtocolMessageType(
     (_message.Message,),
     {
         "DESCRIPTOR": _BOSYPROBLEM,
-        "__module__": "ml2.tools.bosy.bosy_pb2"
+        "__module__": "ml2.tools.bosy.bosy_pb2",
         # @@protoc_insertion_point(class_scope:BoSyProblem)
     },
 )
@@ -185,7 +185,7 @@ BoSySolution = _reflection.GeneratedProtocolMessageType(
     (_message.Message,),
     {
         "DESCRIPTOR": _BOSYSOLUTION,
-        "__module__": "ml2.tools.bosy.bosy_pb2"
+        "__module__": "ml2.tools.bosy.bosy_pb2",
         # @@protoc_insertion_point(class_scope:BoSySolution)
     },
 )
